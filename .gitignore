@@ -1,0 +1,7 @@
+**.pdf
+
+**.doc
+/__pycache__
+/.venv
+/.idea
+```
