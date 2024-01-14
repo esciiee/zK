@@ -19,5 +19,5 @@ def verifier(c, x, y):
         return "The Statement is True"
     return "The Statement is False"
 
-
+# 3x+2y = 10 is true for x=2, y=2
 print(proof(3, 2, 10, 2, 2))
