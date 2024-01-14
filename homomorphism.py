@@ -37,3 +37,16 @@ c= randint(1, curve_order)
 lhs = add(add(multiply(G1, a), multiply(G1, b)), multiply(G1, c))
 rhs = add(multiply(G1, a), add(multiply(G1, b), multiply(G1, c)))
 assert eq(lhs, rhs)
+
+# -------------------------------- ECDSA malleability -----------------------------#
+
+# the property simpley says that mul(G1, (order-x)) = neg(mul(G1,x))
+
+x = randint(1, curve_order)
+assert multiply(G1, (curve_order-x)), neg(multiply(G1, x))
+
+# also recall that the value of the x remains the same when the inverse happens only the y value changes
+assert multiply(G1, x)[0], neg(multiply(G1,x))[0]
+
+# also note that there are points whose inverse is the point itself inv(A) = A
+# for these points if double them we get inv(A) op A = I, we get point of identity which is obvious
