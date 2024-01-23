@@ -21,7 +21,7 @@ def generate_points(mod):
                 ys.append(sr)
     return xs, ys
 
-p=1000
+p=11
 xs, ys = generate_points(p)
 fig, (ax1) = plt.subplots(1, 1)
 fig.suptitle('y^2 = x^3 + 3(mod 11)')

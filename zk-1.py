@@ -1,8 +1,6 @@
 # exercise: to prove knowledge of a solution to a linear system of equations
-# le the problem be 23x=161
 # the prover claims to know a x for which ax+by=c
 # the verifier has to agree on the formula and perform calculation to verify the provers statement
-
 
 from py_ecc.bn128 import G1, add, multiply, eq
 

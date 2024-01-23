@@ -1,8 +1,6 @@
 # %%
 from py_ecc.bn128 import G1, multiply, add, eq, neg
 import matplotlib.pyplot as plt
-import numpy as np
-import math
 
 xs = []
 ys = []

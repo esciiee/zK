@@ -1,7 +1,7 @@
 from py_ecc.bn128 import G1, G2, add, multiply, eq, neg, pairing
 
 
-# ------------------------------- multidimensional elliptic curve points ----------------------------
+# ------------------------------- Multi-Dimensional Elliptic Curve Points ----------------------------
 
 # multi dimensional points like ((p,q),(r,s)) will behave similar to what we saw in case of (x,y)
 assert eq(add(add(G2, G2), G2), multiply(G2, 3))
@@ -15,8 +15,7 @@ B = multiply(G1, b)
 C = multiply(G1, c)
 assert eq(pairing(A,B), pairing(G2, C))
 # print(pairing(A,B))
-# this shit is'nt working on my system :(
-
+# use google colloab if this is not working locally
 # --------------------------------- example problem ---------------------------------------
 
 a = 4
@@ -35,5 +34,5 @@ C1 = multiply(G1, c)
 D2 = multiply(G2, d)
 print(f'{A1[0]}\n{A1[1]}\n{B2[0]}\n{B2[1]}\n{C1[0]}\n{C1[1]}\n{D2[0]}\n{D2[1]}')
 # Now we have the values encrypted into points on G1 and G2 groups, 
-# someone else or a program can confi rm that we computed A1B2+C1D2=0 
+# someone else or a program can confirm that we computed A1B2+C1D2=0 
 # correctly without knowing the individual values of a, b, c, or d. 
