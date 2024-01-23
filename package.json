@@ -1,0 +1,11 @@
+{
+  "name": "zK",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/surajj3404/zK.git",
+  "author": "suraj <surajj3404@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "snarkjs": "^0.7.3"
+  }
+}
