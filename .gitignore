@@ -2,6 +2,7 @@
 
 **.doc
 /__pycache__
+/venv
 /.venv
 /.idea
 ```
