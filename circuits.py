@@ -8,7 +8,7 @@ from py_ecc.bn128 import G1, G2, add, multiply, eq, neg, pairing
 # caution: this is not an efficient method for generating zkp and requires a lot of computation 
 
 # method: encrypting  the witness vector by multiplying with G1 and G2 points
-# then generating bilinear pairings for the encrypted points
+# then comparing bilinear pairings for the encrypted points
 # mathematically: e(aG1, bG2) = e(G1, abG2) = e(abG1, G2)
 
 # prover
