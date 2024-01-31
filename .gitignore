@@ -7,4 +7,5 @@
 /.idea
 /node_modules
 *_js/
+.vscode
 ```
