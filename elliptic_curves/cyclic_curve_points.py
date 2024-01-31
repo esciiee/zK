@@ -1,4 +1,4 @@
-import add_curve_points
+import elliptic_curves.add_curve_points as add_curve_points
 
 # refer elliptic_curve_plot.py for the plot of the curve
 
