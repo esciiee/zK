@@ -97,6 +97,7 @@ term_3 = inner_product_polynomials_with_witness(W_polys, witness)
 # note that it is eventually a identity in its vector form 
 
 # the purpose for two different poynomials instead of one is to make sure the prover knows the witness vector
+# and the additional polynomial corresponds to the r1cs equation
 
 # t = (x - 1)(x - 2)(x - 3)(x - 4)
 t = galois.Poly([1, 78], field = GF) * galois.Poly([1, 77], field = GF) * galois.Poly([1, 76], field = GF) * galois.Poly([1, 75], field = GF)
